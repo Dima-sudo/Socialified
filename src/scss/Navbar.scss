@@ -1,0 +1,24 @@
+  
+.nav-tabs .nav-link {
+    border-bottom: .214rem solid transparent;
+    transition: all 0.3s;
+    
+    &:hover{
+        border-bottom-color: rgba(17, 45, 78, 0.7) !important;
+        opacity: 1;
+        color: rgba(17, 45, 78, 0.7) !important;
+    }
+
+    &:focus{
+        border-bottom-color: rgba(17, 45, 78, 1) !important;
+        opacity: 1;
+        color: rgba(17, 45, 78, 1) !important;
+    }
+    
+}
+
+.bg-light{
+    background-color: white !important;
+    z-index: 5;
+}
+

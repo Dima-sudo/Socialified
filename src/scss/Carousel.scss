@@ -1,0 +1,38 @@
+
+@mixin carousel-item{
+    height: 80vh;
+    background-size: cover;
+    background-position: center !important;
+    z-index: -1;
+}
+
+.carousel-item {
+    height: 80vh;
+  }
+
+.friendship{
+    background: url('../images/Friendship_4.jfif');
+    @include carousel-item();
+}
+
+.love{
+    background: url('../images/Drink.jfif');
+    @include carousel-item();
+}
+
+.friendship-secondary{
+    background: url('../images/Table.jfif');
+    @include carousel-item();
+}
+
+.carousel-inner > .item > img {
+    margin: auto 0;
+  }
+
+  .carousel-overlay{
+      background-color: darkblue;
+      opacity: 0.7;
+      z-index: 0;
+  }
+
+ 

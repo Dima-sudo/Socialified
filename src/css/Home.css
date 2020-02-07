@@ -1,0 +1,93 @@
+.btn.btn-outline-success {
+  color: #112d4e;
+  border: 1px solid #112d4e; }
+  .btn.btn-outline-success:hover {
+    color: #112d4ee1;
+    border: 1px solid #112d4ee1; }
+  .btn.btn-outline-success:focus {
+    outline: none !important;
+    border-color: #112d4e;
+    color: #112d4e;
+    outline-style: none !important; }
+  .btn.btn-outline-success:active {
+    outline: none;
+    color: #112d4e;
+    border: 1px solid #112d4e !important;
+    outline-style: none; }
+
+.btn.btn-outline-success:active:focus,
+.btn.btn-outline-success:active:hover {
+  color: #112d4e !important;
+  border-color: #112d4e !important;
+  box-shadow: none !important; }
+
+.btn-outline-success.focus,
+.btn-outline-success:focus {
+  box-shadow: none; }
+
+.btn-outline-danger.focus,
+.btn-outline-danger:focus {
+  box-shadow: none; }
+
+.section-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end !important; }
+
+.section-reviews {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-around; }
+
+.homepage-medium-image {
+  height: calc(80vh * 0.5); }
+
+h1 {
+  /* More noticeable text shadow on lighter font */
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  color: white; }
+
+.description-text {
+  color: gray !important;
+  font-size: 1.25rem;
+  /* Slight text shadow on darker font */
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 2px 3.5px rgba(0, 0, 0, 0.05), 0px 4.5px 6px rgba(0, 0, 0, 0.05);
+  font-weight: 300; }
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.far.fa-comments {
+  color: gray; }
+
+.parallax-background {
+  height: 80vh;
+  background-image: url("../images/Hands.jfif");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.background-overlay {
+  background-color: #000053;
+  opacity: 0.7;
+  z-index: 0; }
+
+  .nav-item{
+    cursor: pointer;
+  }
+
+@media only screen and (max-width: 480px) {
+  .image-primary {
+    flex-direction: column; }
+  .image-secondary {
+    flex-direction: column-reverse; }
+  .section-reviews {
+    flex-direction: column !important; } }
+
+@media only screen and (min-width: 1200px) {
+  .display-2 {
+    font-size: 5rem !important; } }

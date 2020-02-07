@@ -1,0 +1,70 @@
+$background-color-dark: #dbe2ef;
+$background-color-light: #f9f7f7;
+$text-color-dark: #707070;
+$text-color-light: #f9f7f7;
+
+@mixin gradient-background-dark{
+    background: rgb(219,226,239);
+    background: radial-gradient(circle, rgba(219,226,239,1) 24%, rgba(179,188,204,1) 82%);
+}
+
+@mixin gradient-background-light{
+    background: rgb(249,247,247);
+    background: radial-gradient(circle, rgba(249,247,247,1) 15%, rgba(235,229,229,1) 82%);
+}
+
+@mixin gradient-background-footer{
+    background: rgb(63,114,175);
+    background: radial-gradient(circle, rgba(63,114,175,1) 15%, rgba(42,83,131,1) 82%);
+}
+
+// Sections are containers that have a set minimum height of the display view height, they will stretch
+// if they need to in order to fit all of the content that's put inside.
+
+// Non flex larger container
+.section-primary{
+    @include gradient-background-dark();
+    min-height: 80vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+// Smaller flex container mainly used for text and the like
+.section-secondary{
+    @include gradient-background-light();
+    min-height: 40vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: $text-color-dark;
+}
+
+.footer{
+    min-height: 5vh;
+    height: auto;
+    @include gradient-background-footer();
+    text-align: center;
+    width: 100%;
+    color: $text-color-light;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+// Specifying behaviour for smaller screens
+@media only screen and(max-width: 480px){
+    .section-primary{
+        min-height: 70vh;
+        height: auto;
+    }
+}
+
+@media only screen and(min-width: 1200px){
+    .section-primary{
+        min-height: 50vh;
+        height: auto;
+    }
+}
+
